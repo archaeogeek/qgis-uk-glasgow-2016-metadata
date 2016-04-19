@@ -4,8 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Metadata in QGIS</title>
 
+
+		<meta name="description" content="Metadata in QGIS">
+		<meta name="author" content="Jo Cook">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 
@@ -24,8 +27,26 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section><h1>Metadata in QGIS</h1><h2>An Overview</h2><p>Jo Cook | Astun Technology | @archaeogeek</section>
+				<section><h3>What do we mean when we talk about metadata in QGIS?</h3></section>
+				<section><strong>Geographic Metadata</strong>: info QGIS needs, like CRS, extents, geometry types...<br />
+				<strong>Human Metadata</strong>: info humans need, like who to contact, when the data was created, what is it for...<br /></section>
+				<section><h3>What use cases are there?</h3></section>
+				<section>
+				<strong>Discovery Metadata</strong>: using metadata to find new data...<br />
+				<strong>Creating Metadata</strong>: using QGIS to create metadata, for example for INSPIRE...</section>
+				<section><h3>QGIS has plugins to suit all these uses...</h3></section>
+				<section><h3>... but are they any good?</h3></section>
+				<section><h3>tl;dr there's room for improvement!</h3></section>
+				<section><h1>Layer Metadata Dock</h1>
+					<img src="./images/layer_metadata_dock.png"></section>
+				<section>
+					<p>Does what it says on the tin- provides quick access to layer metadata such as extent, attribute fields, CRS, available actions</p>
+					<p>Customisable- choose which metadata elements you want to display</p>
+					<p>Has options to copy elements to clipboard but no obvious way of exporting the information (eg to xml)</p>
+				</section>
+				
+
 			</div>
 		</div>
 
