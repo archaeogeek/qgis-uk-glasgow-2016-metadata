@@ -37,7 +37,10 @@
 				<strong>Creating Metadata</strong>: using QGIS to create metadata, for example for INSPIRE...</section>
 				<section><h3>QGIS has plugins to suit all these uses...</h3></section>
 				<section><h3>... but are they any good?</h3></section>
+				<section><p>A JNCC report from 2014 (<a target="_next" href="http://jncc.defra.gov.uk/page-6762">jncc.defra.gov.uk/page-6762</a>) assessing QGIS's suitability for replacing proprietary alternatives highlighted metdata as an area of weakness</p></section>
+				<section><blockquote></blockquote>&ldquo;metadata management functionality was extremely limited in QGIS&rdquo;</blockquote></section>
 				<section><h3>tl;dr there's room for improvement!</h3></section>
+				<section><h1>Overview of existing plugins</h1></section>
 				<section><h1>Layer Metadata Dock</h1>
 					<img src="./images/layer_metadata_dock.png"></section>
 				<section>
@@ -45,6 +48,109 @@
 					<p>Customisable- choose which metadata elements you want to display</p>
 					<p>Has options to copy elements to clipboard but no obvious way of exporting the information (eg to xml)</p>
 				</section>
+				<section><h2>Development</h2>
+					<p>Has a github repository at <a target="_next" href="https://github.com/stevefaeembra/LayerMetadata">github.com/stevefaeembra/LayerMetadata</a></p>
+					<p>Most recent commit was 7 months ago</p>
+					<p>1 contributor</p>
+				</section>
+				<section><h1>Metatools</h1>
+					<img src="./images/metatools_1.png"></section>
+				<section>
+					<h2>Good bits</h2>
+					<p>Metadata browser and editor for QGIS. Supports both vector and raster layers</p>
+					<p>Supported metadata standards: ISO19115/ISO19139 and FGDC</p>
+					<p>Can associate, view and edit metadata in other schemas</p>
+				</section>
+				<section>
+					<h2>Not so good bits</h2>
+					<p>Validation is only possible in FGDC</p>
+					<p>Editing is limited, as there are no controlled text lookups</p>
+					<p>Documentation is sometimes confusing- text in images is in Cryllic!</p>
+				</section>
+				<section>
+				<h2>Development</h2>
+					<p>Has a github repository at <a target="_next" href="https://github.com/nextgis/metatools">github.com/nextgis/metatools</a></p>
+					<p>Most recent commit was 1 month ago</p>
+					<p>5 contributors, developed by NextGIS for Linfiniti Consulting</p>
+				</section>
+				<section><h1>QSphere</h1>
+					<img src="./images/metatools_1.png"></section>
+				<section>
+					<h2>Good bits</h2>
+					<p>Metadata browser and editor for QGIS</p>
+					<p>Supports ISO19139/INSPIRE</p>
+					<p>Can connect to remote servers for CSW and lookup tables</p>
+				</section>
+				<section>
+					<h2>Not so good bits</h2>
+					<p>Trouble installing (had to install manually)</p>
+					<p>No obvious english-language repository or bug tracker</p>
+					<p>The 80s called- they want their interface back!</p>
+					<p>XML capabilities slightly limited (XPath 1.0, no nilreason, href etc)</p>
+				</section>
+				<section>
+				<h2>Development</h2>
+					<p>Has a code repository at <a target="_next" href="https://qgis.projets.developpement-durable.gouv.fr/projects/qsphere">qgis.projets.developpement-durable.gouv.fr/projects/qsphere</a> but versions don't match</p>
+					<p>Most recent commit was 3 weeks ago (maybe?)</p>
+					<p>2 contributors, developed for French Ministry of Ecology, Sustainable development and Energy</p>
+				</section>
+				<section><h1>Layer Metadata Search</h1>
+					<img src="./images/layer_metadata_search.png"></section>
+				<section>
+					<p>Search tool for data stored in PostGIS database</p>
+					<p>Search on title and abstract</p>
+					<p>Help documentation currently on private intranet!</p>
+				</section>
+				<section>
+				<h2>Development</h2>
+					<p>Has a github repository at <a target="_next" href="https://github.com/lutraconsulting/qgis-geocat-plugin">github.com/lutraconsulting/qgis-geocat-plugin</a></p>
+					<p>Most recent commit was 5 months ago</p>
+					<p>1 contributor, developed by Lutra Consulting for Dartmoor National Park Authority</p>
+				</section>
+				<section><h1>MetaSearch</h1>
+					<img src="./images/layer_metadata_search.png"></section>
+				<section>
+					<p>Search tool for metadata/data stored on remote CSW servers</p>
+					<p>Choose from pre-loaded CSW servers (eg data.gov.uk) or connect to your own</p>
+					<p>Load data directly if metadata permits it</p>
+				</section>
+				<section>
+				<h2>Development</h2>
+					<p>Now part of QGIS Core, so code is available at <a target="_next" href="https://github.com/qgis/QGIS/tree/master/python/plugins/MetaSearch">github.com/qgis/QGIS/tree/master/python/plugins/MetaSearch</a></p>
+					<p>Most recent commit was 4 weeks ago</p>
+					<p>Main developer is <a target="_next" href="https://github.com/tomkralidis">Tom Kralidis</a></p>
+				</section>
+				<section><h1>INSPIRE Atom Client</h1>
+					<img src="./images/layer_metadata_search.png"></section>
+				<section>
+					<p>Search tool for metadata/data sourced from an INSPIRE Atom download URL</p>
+					<p>Choose from pre-loaded URL or connect to your own</p>
+					<p>Load data directly if metadata permits it</p>
+					<p>Could not get any UK Atom URLs to work!</p>
+				</section>
+				<section>
+				<h2>Development</h2>
+					<p>Experimental plugin, GitHub repository available at <a target="_next" href="https://github.com/JuergenWeichand/qgis-inspire-atom-client-plugin">github.com/JuergenWeichand/qgis-inspire-atom-client-plugin</a></p>
+					<p>Most recent commit was 6 months ago</p>
+					<p>2 Developers</p>
+				</section>
+				<section>
+					<h2>Thoughts</h2>
+					<p>Every existing plugin/tool has bugs so there's plenty of room for development in this area</p>
+					<p>QSphere and MetaTools should combine to make a single plugin</p>
+					<p><bold>Best current solution is creating/validating metadata in Geonetwork and using MetaSearch plugin for QGIS discovery</bold></p>
+				</section>
+				<section>
+					<h1>And what about INSPIRE Phase 2?</h1>
+					<p>eg data file format, geometric, and schema transformations, and language translations</p>
+				</section>
+				<section>
+					<p>QGIS can handle some of these issues natively, but there's no obvious way of downloading the INSPIRE data schemas for data transformations</p>
+					<p>Support for viewing Complex GML and/or WFS 2.0 in QGIS is covered by plugins</p>
+					<p><bold>Current best solution is something like <a target="_next" href="https://www.wetransform.to/products/halestudio/">Hale Studio</a> and QGIS for viewing/discovery</bold></p>
+				</section>
+
+
 				
 
 			</div>
