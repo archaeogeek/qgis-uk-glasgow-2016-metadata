@@ -27,7 +27,9 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section><h1>Metadata in QGIS</h1><h2>An Overview</h2><p>Jo Cook | Astun Technology | @archaeogeek</section>
+				<section><h1>Metadata in QGIS</h1><h2>An Overview</h2><p>Jo Cook | Astun Technology | @archaeogeek</p>
+					<img class="center" src="./images/logo.jpg" alt="Astun Logo">
+				</section>
 				<section><h3>What do we mean when we talk about metadata in QGIS?</h3></section>
 				<section><strong>Geographic Metadata</strong>: info QGIS needs, like CRS, extents, geometry types...<br />
 				<strong>Human Metadata</strong>: info humans need, like who to contact, when the data was created, what is it for...<br /></section>
@@ -37,8 +39,8 @@
 				<strong>Creating Metadata</strong>: using QGIS to create metadata, for example for INSPIRE...</section>
 				<section><h3>QGIS has plugins to suit all these uses...</h3></section>
 				<section><h3>... but are they any good?</h3></section>
-				<section><p>A JNCC report from 2014 (<a target="_next" href="http://jncc.defra.gov.uk/page-6762">jncc.defra.gov.uk/page-6762</a>) assessing QGIS's suitability for replacing proprietary alternatives highlighted metdata as an area of weakness</p></section>
-				<section><blockquote></blockquote>&ldquo;metadata management functionality was extremely limited in QGIS&rdquo;</blockquote></section>
+				<section><p>A JNCC report from 2014 (<a target="_next" href="http://jncc.defra.gov.uk/page-6762">jncc.defra.gov.uk/page-6762</a>) assessing QGIS's suitability for replacing proprietary alternatives highlighted metdata as an area of weakness</p>
+				<blockquote>&ldquo;metadata management functionality was extremely limited in QGIS&rdquo;</blockquote></section>
 				<section><h3>tl;dr there's room for improvement!</h3></section>
 				<section><h1>Overview of existing plugins</h1></section>
 				<section><h1>Layer Metadata Dock</h1>
@@ -135,22 +137,33 @@
 					<p>2 Developers</p>
 				</section>
 				<section>
+					<h1>And finally, what about INSPIRE Phase 2?</h1>
+					<p>eg data file format, geometric, and schema transformations</p>
+				</section>
+				<section>
+					<p>QGIS can handle some of these natively, but there's no obvious way of working with the INSPIRE data schemas for data transformations</p>
+					<p>Support for viewing Complex GML and/or WFS 2.0 is covered by plugins</p>
+					<p>It would be nice if it was possible to download the schema here: <a target="_next" href="http://inspire.ec.europa.eu/schemas/elu/4.0/ExistingLandUse.xsd">inspire.ec.europa.eu/schemas/elu/4.0/ExistingLandUse.xsd</a> for use inside QGIS</p>
+					<p>Currently external packages are needed for this</p>
+				</section>
+
+				<section>
+					<p>If you have FME then you're sorted, but of the available open source packages <a target="_next" href="https://www.wetransform.to/products/halestudio/">Hale Studio</a> fits the bill</p>
+					<img src="./images/hale_mapping.png"></section>
+
+				</section>
+				<section>
 					<h2>Thoughts</h2>
 					<p>Every existing plugin/tool has bugs so there's plenty of room for development in this area</p>
 					<p>QSphere and MetaTools should combine to make a single plugin</p>
-					<p><bold>Best current solution is creating/validating metadata in Geonetwork and using MetaSearch plugin for QGIS discovery</bold></p>
-				</section>
-				<section>
-					<h1>And what about INSPIRE Phase 2?</h1>
-					<p>eg data file format, geometric, and schema transformations, and language translations</p>
-				</section>
-				<section>
-					<p>QGIS can handle some of these issues natively, but there's no obvious way of downloading the INSPIRE data schemas for data transformations</p>
-					<p>Support for viewing Complex GML and/or WFS 2.0 in QGIS is covered by plugins</p>
-					<p><bold>Current best solution is something like <a target="_next" href="https://www.wetransform.to/products/halestudio/">Hale Studio</a> and QGIS for viewing/discovery</bold></p>
+					<p><bold>Best current solution is creating/validating metadata in Geonetwork and using MetaSearch plugin for QGIS discovery, and something like Hale Studio for INSPIRE data transformation</bold></p>
 				</section>
 
-
+				<section>
+				<h1>Thanks!</h1>
+				<p><a href="http://archaeogeek.github.io/qgis-uk-glasgow-2016-metadata">archaeogeek.github.io/qgis-uk-glasgow-2016-metadata</a></p>
+				<p>Jo Cook | Astun Technology | @archaeogeek</p>
+				</section>
 				
 
 			</div>
